@@ -8,6 +8,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 :::nf::not a finding.
 :::fsmail::william.p.neal36.ctr@us.navy.mil
 :::rdmail::william.neal.ctr@niwc.navy.mil
+:::omail::mrprestonneal@outlook.com
+:::gmail::mrprestonneal@gmail.com
 
 ; Daily ISS Email
 +!d::
@@ -20,4 +22,3 @@ Send, {Enter down}{Enter up}
 Send, {Ctrl down}a{Ctrl up}
 Send, {Delete}
 Send, COVID SCREEN QUESTIONAIRE COMPLETE: 'No' to all questions
-
