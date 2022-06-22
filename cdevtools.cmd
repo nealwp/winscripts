@@ -1,1 +1,0 @@
-powershell "Set-ItemProperty HKLM:\SOFTWARE\Policies\Google\Chrome -Name DeveloperToolsAvailability -Value 1"
