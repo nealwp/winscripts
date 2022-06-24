@@ -1,1 +1,1 @@
-start C:\Users\mrpre\AppData\Local\Postman
+start %LOCALAPPDATA%\Postman\Postman.exe
