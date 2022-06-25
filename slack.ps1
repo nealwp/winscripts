@@ -1,0 +1,1 @@
+Start-Process $env:LOCALAPPDATA\slack\slack.exe
