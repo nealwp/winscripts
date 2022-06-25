@@ -1,1 +1,0 @@
-start C:\Users\mrpre\AppData\Local\slack\slack.exe
