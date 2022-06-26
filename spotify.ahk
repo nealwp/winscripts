@@ -1,4 +1,6 @@
 ; "CTRL + Alt + S" for Launching spotify / Activating the window / Minimizing the window
+#NoEnv
+EnvGet, username, username
 ^!S::
 IfWinExist ahk_exe Spotify.exe
 {
@@ -13,7 +15,8 @@ IfWinExist ahk_exe Spotify.exe
 }
 else
 {
-	run "C:\Users\mrpre\AppData\Roaming\Spotify\Spotify.exe"
+    path := "C:\Users\" username "\AppData\Roaming\Spotify\Spotify.exe"
+	run %path%
 }
 return
 
