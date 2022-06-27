@@ -1,6 +1,6 @@
 Import-Module $PSScriptRoot/modules/Get-IniFile.psm1
 
 $ini = Get-IniFile $PSScriptRoot/config/winscripts.ini
-$drive = $ini.default.drive
+$xpath = $ini.path.notepad
 
-Start-Process "$drive\Program Files\Notepad++\notepad++.exe"
+Start-Process $xpath

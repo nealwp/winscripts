@@ -22,3 +22,35 @@ Send, {Enter down}{Enter up}
 Send, {Ctrl down}a{Ctrl up}
 Send, {Delete}
 Send, COVID SCREEN QUESTIONAIRE COMPLETE: 'No' to all questions
+return
+
+; change text casing
++!u::  ; Shift-Alt-u UPPERCASE
+Clipboard = ; Empty the clipboard so that ClipWait has something to detect
+SendInput, ^c ;copies selected text
+ClipWait
+StringReplace, OutputText, Clipboard, `r`n, `n, All ;Fix for SendInput sending Windows linebreaks 
+StringUpper, OutputText, OutputText
+SendRaw % OutputText
+VarSetCapacity(OutputText, 0)                                                                  
+return
+
++!l:: ; Shift-Alt-l lowercase
+Clipboard = 
+SendInput, ^c 
+ClipWait
+StringReplace, OutputText, Clipboard, `r`n, `n, All 
+StringLower, OutputText, OutputText
+SendRaw % OutputText
+VarSetCapacity(OutputText, 0)
+return
+
++!k:: ; Shift-Alt-k Titlecase                                                               
+Clipboard = 
+SendInput, ^c 
+ClipWait
+StringReplace, OutputText, Clipboard, `r`n, `n, All  
+StringUpper, OutputText, OutputText, T
+SendRaw % OutputText
+VarSetCapacity(OutputText, 0) 
+return
