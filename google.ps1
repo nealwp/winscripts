@@ -2,4 +2,8 @@ param (
     [string]$query
 )
 $query = $query.replace(' ', '+')
-Start-Process "C:\Program Files\Google\Chrome\Application\chrome.exe" "www.google.com/search?q=$query"
+if ($query) {
+    Start-Process "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" "www.google.com/search?q=$query"
+    exit
+}
+Start-Process "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
