@@ -1,1 +1,0 @@
-start "" "D:\postgres\pgAdmin 4\bin\pgAdmin4.exe"
