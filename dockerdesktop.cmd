@@ -1,1 +1,0 @@
-start "" "C:\Program Files\Docker\Docker\frontend\Docker Desktop.exe""

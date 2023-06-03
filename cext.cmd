@@ -1,1 +1,0 @@
-powershell "new-itemproperty hklm:\software\policies\google\chrome\ExtensionInstallForceList -name 1 -value 'jndllhgbinhiiddokbeoeepbppdnhhio' ;"

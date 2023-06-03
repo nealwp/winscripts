@@ -1,1 +1,0 @@
-start %LOCALAPPDATA%\Postman\Postman.exe

@@ -1,1 +1,0 @@
-C:\STIGViewer\STIGViewer-2.15.jar
